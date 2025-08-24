@@ -1,0 +1,80 @@
+{
+  "name": "wareki-converter",
+  "version": "1.0.0",
+  "description": "和暦変換Webアプリ - 1950年以降の西暦を和暦に変換する直感的で美しいWebアプリケーション",
+  "homepage": "https://github.com/your-username/wareki-converter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/wareki-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/wareki-converter/issues"
+  },
+  "author": "GitHub User",
+  "license": "MIT",
+  "keywords": [
+    "和暦",
+    "西暦",
+    "年変換",
+    "昭和",
+    "平成",
+    "令和",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Material-UI"
+  ],
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:static": "next build && next export",
+    "build:gcs": "cp next.config.static.js next.config.js && npm run build:static && cp next.config.js.backup next.config.js",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:ui": "playwright test --ui",
+    "test:lighthouse": "lhci autorun",
+    "analyze": "ANALYZE=true npm run build",
+    "analyze:browser": "npm run analyze && npx serve out"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.15.0",
+    "critters": "^0.0.23",
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.14.0",
+    "@playwright/test": "^1.55.0",
+    "@testing-library/jest-dom": "^6.4.0",
+    "@testing-library/react": "^14.3.0",
+    "@testing-library/user-event": "^14.5.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.12.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "playwright": "^1.55.0",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.4.0",
+    "webpack-bundle-analyzer": "^4.10.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

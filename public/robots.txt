@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wareki-converter.example.com/sitemap.xml
